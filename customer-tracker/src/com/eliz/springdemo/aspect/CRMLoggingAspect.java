@@ -38,7 +38,7 @@ public class CRMLoggingAspect {
 		logger.info("\n=======> in @Before: calling method:"+theMethod);
 		Object[] args = theJoinPoint.getArgs();
 		for(Object tmpArgs: args){
-			logger.info("\n========> Tha arguments:"+tmpArgs);
+			logger.info("\n========> The Arguments:"+tmpArgs);
 		}
 		
 	}
@@ -49,10 +49,10 @@ public class CRMLoggingAspect {
 		
 		String theMethod = theJoinPoint.getSignature().toShortString();
 		
-		logger.info("\n=======> in @AfterReturning: calling method:"+theMethod);
+		logger.info("\n===============> in @AfterReturning: calling method:"+theMethod);
 		
 		//display data returned
-		logger.info("\n=======> result:"+ result);
+		logger.info("\n=================> Result:"+ result);
 	}
 
 
